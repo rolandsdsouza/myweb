@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <img class="img-office" src="images/office.jpg">
+
+<div class="text-box">
+     <h1>Discover proptech<br>trends & insights</h1>
+     <p>Using data collected from 90+ countries and over 2500 workspaces.Get<br>unparalleled insights into flexible working habits across the World.</p>
+     <a href="" class="hero-btn">Explore topics</a>
+</div>
+    </section>
+
+<section class="next">
+    <h1>Resources and Resource Demand</h1>
+    <p>Discover  more about the demand for resources and how they are<br>acessed. Both on a global level and market by market</p>
+
+    <div class="row">
+        <div class="section-col">
+            <h3>Global analysis</h3>
+            <p>A look at the history and trends of coworking and<br>flexible workspaces.</p>
+        </div>
+        <div class="section-col">
+            <h3>Analysis Per Market</h3>
+            <p>A Comprehensive analysis of reservation patterns<br>in coworking and flex workspace in the united<br>states.</p>
+        </div>
+    </div>
+
+</section>
+
+<script>
+
+    var navLinks = document.getElementByID("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+</script>
+
+</body>
+</html>
